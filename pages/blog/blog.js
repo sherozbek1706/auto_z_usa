@@ -9,16 +9,3 @@ hamburger.addEventListener("click", () => {
 closeHeader.addEventListener("click", () => {
   sticky_header.classList.toggle("active");
 });
-
-/**
- *
- * Swiper Initialization
- *
- */
-
-var swiper = new Swiper(".mySwiper", {
-  scrollbar: {
-    el: ".swiper-scrollbar",
-    // hide: true,
-  },
-});
