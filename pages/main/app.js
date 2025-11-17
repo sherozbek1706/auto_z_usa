@@ -19,6 +19,6 @@ closeHeader.addEventListener("click", () => {
 var swiper = new Swiper(".mySwiper", {
   scrollbar: {
     el: ".swiper-scrollbar",
-    // hide: true,
+    hide: false,
   },
 });
