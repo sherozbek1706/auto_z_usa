@@ -62,3 +62,14 @@ close__img2.addEventListener("click", () => {
 //     window.location.assign("/pages/karta_auto/karta_auto.html");
 //   })
 // );
+
+const text2 = document.getElementById("text");
+const btn2 = document.getElementById("toggleBtn");
+
+btn2.addEventListener("click", () => {
+  text2.classList.toggle("expanded");
+
+  if (text2.classList.contains("expanded")) {
+    btn2.textContent = "";
+  }
+});

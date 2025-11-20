@@ -9,3 +9,11 @@ button.addEventListener("click", () => {
 close__img.addEventListener("click", () => {
   zapytaj__layout.classList.toggle("zl__form__active");
 });
+
+let blog = document.querySelectorAll(".blog");
+
+blog.forEach((elem) =>
+  elem.addEventListener("click", () => {
+    window.location.assign("/pages/blog_statsiya/blog_statsiya.html");
+  })
+);

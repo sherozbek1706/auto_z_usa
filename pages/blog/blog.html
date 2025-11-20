@@ -47,12 +47,13 @@
           </div>
           <div class="header__btn">
             <div class="header__socials">
-              <div class="header__social"><img src="/assets/icon/instagram.png" alt="instagram"></div>
-              <div class="header__social"><img src="/assets/icon/facebook.png" alt="facebook"></div>
-              <div class="header__social"><img src="/assets/icon/whatsapp.png" alt="whatsapp"></div>
-              <div class="header__social"><img src="/assets/icon/tiktok.png" alt="tiktok"></div>
+              <div class="header__social"><a href="#"><img src="/assets/icon/instagram.png" alt="instagram"></a></div>
+              <div class="header__social"><a href="#"><img src="/assets/icon/facebook.png" alt="facebook"></a></div>
+              <div class="header__social"><a href="#"><img src="/assets/icon/whatsapp.png" alt="whatsapp"></a></div>
+              <div class="header__social"><a href="#"><img src="/assets/icon/tiktok.png" alt="tiktok"></a></div>
             </div>
             <div class="header__btn__heart">
+              <h4 class="notifications">2</h4>
               <img src="/assets/icon/heart_outline.png" alt="heart">
               <p>Ulubione auta</p>
             </div>
@@ -114,13 +115,21 @@
           <button>Zadać pytanie</button>
         </form>
       </div>
+      <div class="breadcrumb desktop__padding">
+        <a href="/index.html">Główna</a>
+        <img src="/assets/icon/arrow.png" alt="">
+        <a href="/pages/blog/blog.html">Blog</a>
+      </div>
       <div class="section__header desktop__padding">
-        <h2>Blog</h2>
+        <h1>Blog</h1>
       </div>
       <div class="blog__container desktop__padding">
         <div class="blogs">
           <div class="blog">
-            <img src="../../assets/blog1.png" class="blog__image" alt="">
+            <div class="blog__img">
+
+              <img src="../../assets/blog1.png" class="blog__image" alt="">
+            </div>
             <div class="blog__stats">
               <p class="blog__stats__text">12 wyświetleń</p>
               <p class="blog__stats__text">21.10.2025</p>
@@ -133,7 +142,9 @@
               są auta kompaktowe do 60 000 zł, które doskonale łączą korzystną cenę z wysoką jakością...</p>
           </div>
           <div class="blog">
-            <img src="../../assets/blog2.png" class="blog__image" alt="">
+            <div class="blog__img">
+              <img src="../../assets/blog2.png" class="blog__image" alt="">
+            </div>
             <div class="blog__stats">
               <p class="blog__stats__text">12 wyświetleń</p>
               <p class="blog__stats__text">21.10.2025</p>
@@ -146,7 +157,10 @@
               są auta kompaktowe do 60 000 zł, które doskonale łączą korzystną cenę z wysoką jakością...</p>
           </div>
           <div class="blog">
-            <img src="../../assets/blog3.png" class="blog__image" alt="">
+            <div class="blog__img">
+
+              <img src="../../assets/blog3.png" class="blog__image" alt="">
+            </div>
             <div class="blog__stats">
               <p class="blog__stats__text">12 wyświetleń</p>
               <p class="blog__stats__text">21.10.2025</p>
@@ -159,7 +173,10 @@
               są auta kompaktowe do 60 000 zł, które doskonale łączą korzystną cenę z wysoką jakością...</p>
           </div>
           <div class="blog">
-            <img src="../../assets/blog2.png" class="blog__image" alt="">
+            <div class="blog__img">
+
+              <img src="../../assets/blog2.png" class="blog__image" alt="">
+            </div>
             <div class="blog__stats">
               <p class="blog__stats__text">12 wyświetleń</p>
               <p class="blog__stats__text">21.10.2025</p>
@@ -172,7 +189,10 @@
               są auta kompaktowe do 60 000 zł, które doskonale łączą korzystną cenę z wysoką jakością...</p>
           </div>
           <div class="blog">
-            <img src="../../assets/blog3.png" class="blog__image" alt="">
+            <div class="blog__img">
+
+              <img src="../../assets/blog3.png" class="blog__image" alt="">
+            </div>
             <div class="blog__stats">
               <p class="blog__stats__text">12 wyświetleń</p>
               <p class="blog__stats__text">21.10.2025</p>
@@ -185,7 +205,10 @@
               są auta kompaktowe do 60 000 zł, które doskonale łączą korzystną cenę z wysoką jakością...</p>
           </div>
           <div class="blog">
-            <img src="../../assets/blog1.png" class="blog__image" alt="">
+            <div class="blog__img">
+              <img src="../../assets/blog1.png" class="blog__image" alt="">
+
+            </div>
             <div class="blog__stats">
               <p class="blog__stats__text">12 wyświetleń</p>
               <p class="blog__stats__text">21.10.2025</p>
@@ -222,14 +245,15 @@
         </div>
         <div class="zapytaj__image">
           <img src="../../assets/zapytaj.png" alt="zapytaj">
-          <div class="whatsapp__ads">
+          <a href="#" class="whatsapp__ads">
             <div class="wa__container">
               <img src="../../assets/icon/whatsapp-green.png" alt="">
             </div>
             <p class="wa__text">Lub napisz w <span>WhatsApp</span></p>
-          </div>
+          </a>
         </div>
       </form>
+
       <section class="footer desktop__padding">
         <div class="footer__head">
           <img src="../../assets/logo_navbat.png" class="fh__logo" alt="">
@@ -256,21 +280,29 @@
             </a>
           </div>
           <div class="fh__socials">
-            <div class="fhs__container">
-              <img src="../../assets/icon/instagram.png" alt="">
-            </div>
-            <div class="fhs__container">
-              <img src="../../assets/icon/facebook.png" alt="">
-            </div>
-            <div class="fhs__container">
-              <img src="../../assets/icon/whatsapp.png" alt="">
-            </div>
-            <div class="fhs__container">
-              <img src="../../assets/icon/tiktok.png" alt="">
-            </div>
+            <a href="#">
+              <div class="fhs__container">
+                <img src="../../assets/icon/instagram.png" alt="">
+              </div>
+            </a>
+            <a href="#">
+              <div class="fhs__container">
+                <img src="../../assets/icon/facebook.png" alt="">
+              </div>
+            </a>
+            <a href="#">
+              <div class="fhs__container">
+                <img src="../../assets/icon/whatsapp.png" alt="">
+              </div>
+            </a>
+            <a href="#">
+              <div class="fhs__container">
+                <img src="../../assets/icon/tiktok.png" alt="">
+              </div>
+            </a>
           </div>
           <p class="all__rights">
-            © Sherozbek, 2025
+            <a href="https://sherozbek.uz/" style="color: #d1d1d1;">© Sherozbek , 2025</a>
           </p>
         </div>
         <div class="footer__links">

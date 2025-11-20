@@ -17,10 +17,22 @@
   background: #fff;
   border-radius: 20px;
   padding-bottom: 30px;
+  transition: 0.3s ease-in-out;
 }
 .blog__image {
   border-radius: 20px;
   height: 340px;
+  transition: 0.3s ease-in-out;
+}
+.blog__img {
+  overflow: hidden;
+  border-radius: 20px;
+}
+.blog:hover {
+  cursor: pointer;
+}
+.blog:hover .blog__image {
+  transform: scale(1.1) rotate(0deg);
 }
 .blog__stats {
   display: flex;

@@ -259,6 +259,29 @@
   padding: 10px 0;
   gap: 20px;
 }
+.kf__desc .text {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* nechta qator ko'rinsin */
+  -webkit-box-orient: vertical;
+  transition: 0.3s;
+  
+}
+#toggleBtn {
+  background: none;
+  border: none;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  box-shadow: 0px -20px 10px 0px rgb(209, 209, 209);
+}
+
+.kf__desc .text.expanded {
+  -webkit-line-clamp: unset;
+}
+
 .karta__form input {
   width: 40%;
   height: 60px;
