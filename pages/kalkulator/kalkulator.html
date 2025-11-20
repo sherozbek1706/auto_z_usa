@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auto Z USA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Unbounded:wght@200..900&display=swap"
+    rel="stylesheet">
+
+  <!-- Link Swiper's CSS -->
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./kalkulator.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <main>
+      <header>
+        <div class="header__top desktop__padding">
+          <div class="header__nav">
+            <a href="/index.html"><img src="/assets/logo_navbat.png" alt="logo"></a>
+            <a href="#">Śledzenie pojazdu</a>
+            <a href="#">O nas</a>
+            <a href="/pages/blog/blog.html">Blog</a>
+            <a href="/pages/kontakt/kontakt.html">Kontakt</a>
+          </div>
+          <div class="header__info">
+            <div class="header__info__elem">
+              <img src="/assets/icon/clock.png" alt="">
+              <p>Pon-Pt 9:00-17:00</p>
+            </div>
+            <div class="header__info__elem">
+              <img src="/assets/icon/phone.png" alt="">
+              <p>+481111</p>
+              <h3>+48 510 272 737</h3>
+            </div>
+          </div>
+          <div class="header__btn">
+            <div class="header__socials">
+              <div class="header__social"><img src="/assets/icon/instagram.png" alt="instagram"></div>
+              <div class="header__social"><img src="/assets/icon/facebook.png" alt="facebook"></div>
+              <div class="header__social"><img src="/assets/icon/whatsapp.png" alt="whatsapp"></div>
+              <div class="header__social"><img src="/assets/icon/tiktok.png" alt="tiktok"></div>
+            </div>
+            <div class="header__btn__heart">
+              <img src="/assets/icon/heart_outline.png" alt="heart">
+              <p>Ulubione auta</p>
+            </div>
+            <button>Zapytaj</button>
+            <img src="/assets/icon/hamburger.png" class="hamburger" alt="hamburger">
+          </div>
+        </div>
+        <div class="header__bottom desktop__padding">
+          <a href="/pages/zamowienie/zamowienie.html">Auto na zamowienie</a>
+          <a href="#">Samochody elektryczne</a>
+          <a href="#">Hybrydy</a>
+          <a href="#">Pickupy</a>
+          <a href="#">Muscle cars</a>
+          <a href="#">Uslugi</a>
+          <a href="/pages/kalkulator/kalkulator.html">Kalkulator</a>
+        </div>
+      </header>
+      <div class="sticky__header">
+        <div class="sticky__header__nav">
+          <a href="/index.html"><img src="/assets/logo_navbat.png" alt="logo"></a>
+          <div class="sticky__header__close">
+            <p>Zamknąć</p>
+            <img src="/assets/icon/close_big.png" alt="close">
+          </div>
+        </div>
+        <div class="sticky__header__links">
+          <a href="/pages/zamowienie/zamowienie.html">Auto na zamowienie</a>
+          <a href="#">Samochody elektryczne</a>
+          <a href="#">Hybrydy</a>
+          <a href="#">Pickupy</a>
+          <a href="#">Muscle cars</a>
+          <a href="#">Uslugi</a>
+          <a href="/pages/kalkulator/kalkulator.html">Kalkulator</a>
+          <a href="#">Śledzenie pojazdu</a>
+          <a href="#">O nas</a>
+          <a href="/pages/blog/blog.html">Blog</a>
+          <a href="/pages/kontakt/kontakt.html">Kontakt</a>
+        </div>
+      </div>
+      <div class="zapytaj__layout">
+        <div class="zl__form">
+          <img src="/assets/icon/close_big.png" class="close__img" alt="">
+          <h2 class="zl__title" class="input">Zapytaj</h2>
+          <input type="text" class="input" placeholder="Imię">
+          <input type="number" class="input" placeholder="+48">
+          <input type="email" class="input" placeholder="email">
+          <textarea placeholder="Wpisz tekst"></textarea>
+          <div class="zl__check">
+            <input type="checkbox">
+            <p>Akceptuję <a href="#">politykę prywatności</a></p>
+          </div>
+          <p class="desc">Administratorem Twoich danych osobowych będzie Purplelabs Będziemy
+            przetwarzać Twoje dane osobowe w celu nawiązania z Tobą kontaktu w związku ze
+            złożonym zgłoszeniem. Masz prawo żądania dostępu do treści swoich danych osobowych,
+            prawo do ich sprostowania, usunięcia lub ograniczenia przetwarzania, prawo do wyrażenia
+            sprzeciwu wobec dalszego przetwarzania Twoich danych, a także prawo wniesienia skargi
+            do Prezesa Urzędu Ochrony Danych Osobowych. Szczegółowe informacje o przetwarzaniu
+            danych osobowych znajdują się w Polityce Prywatności.</p>
+          <button>Zadać pytanie</button>
+        </div>
+      </div>
+      <div class="section__header desktop__padding">
+        <h2>Kalkulator
+        </h2>
+      </div>
+      <section class="kalkulator desktop__padding">
+        <div class=" kalk__info">
+          <div class="kalk__text">
+            <h4 class="kt__title">Każdy samochód jest wyceniany indywidualnie za pomocą naszego ekskluzywnego
+              kalkulatora.</h4>
+            <p class="kt__desc">Cena pojazdu, pojemność silnika, lokalizacja oraz rodzaj dokumentów mają wpływ na
+              ostateczną wycenę.</p>
+          </div>
+          <div class="kalk__image">
+            <img src="/assets/kalkulator_car.png" alt="">
+          </div>
+        </div>
+        <div class="kalk__forms">
+          <div class="kalk__form">
+            <div class="kf__math">
+              <p class="kf__label">
+                Cena samochodu
+              </p>
+              <div class="kf__btns">
+                <button class="kfbutton">Od</button>
+                <p class="kfb__value">-</p>
+                <button class="kfbutton">Do</button>
+              </div>
+            </div>
+            <div class="kf__math">
+              <p class="kf__label">
+                Przebieg
+              </p>
+              <div class="kf__btns">
+                <button class="kfbutton">Od</button>
+                <p class="kfb__value">-</p>
+                <button class="kfbutton">Do</button>
+              </div>
+            </div>
+            <div class="kf__math">
+              <p class="kf__label">
+                Rok produkcji
+              </p>
+              <select class="kf__select">
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+                <option value="2026">2026</option>
+              </select>
+            </div>
+            <div class="kf__math">
+              <p class="kf__label">
+                Rodzaj silnika
+              </p>
+              <select class="kf__select">
+                <option value="Benzyna">Benzyna</option>
+              </select>
+            </div>
+            <div class="kf__math">
+              <p class="kf__label">
+                Napęd
+              </p>
+              <select class="kf__select">
+                <option value="Na wszystkie koła">Na wszystkie koła</option>
+
+              </select>
+            </div>
+            <div class="kf__math">
+              <p class="kf__label">
+                Typ skrzyni biegów
+              </p>
+              <select class="kf__select">
+                <option value="Mechaniczna">Mechaniczna
+                </option>
+              </select>
+            </div>
+          </div>
+          <div class="cena">
+            <div class="cena__one">
+              <p class="co__title">Cena samochodu</p>
+              <p class="co__price">53 $</p>
+            </div>
+            <div class="cena__one">
+              <p class="co__title">Cło importowe</p>
+              <p class="co__price">65 $</p>
+            </div>
+            <div class="cena__one">
+              <p class="co__title">VAT</p>
+              <p class="co__price">151 $</p>
+            </div>
+            <div class="cena__one">
+              <p class="co__title">Cena całkowita</p>
+              <p class="co__price">269 $</p>
+            </div>
+          </div>
+          <div class="kalk__btns">
+            <button class="kalk__btns__active">Pełne obliczenie</button>
+            <button>Oblicz</button>
+          </div>
+          <p class="kalk__bottom">Podane obliczenie jest orientacyjne</p>
+        </div>
+      </section>
+      <section class="cars__infos">
+        <div class="section__header desktop__padding">
+          <h2>Dlaczego ważne jest, aby <span>znać koszt</span> sprowadzenia samochodu z USA?</h2>
+        </div>
+        <div class="cars__info desktop__padding">
+          <p class="ci__desc">Używanie kalkulatora opłat celnych dla samochodów z USA pomaga lepiej zrozumieć proces
+            kształtowania końcowej ceny pojazdu. Cena na aukcji jest ważna, ale to tylko jedna z części procesu wyboru
+            na Copart online.</p>
+          <p class="ci__desc">Często ludzie przychodzą z zapytaniem o konkretny model z dużą pojemnością silnika i są
+            zdziwieni, dlaczego do ceny dodawana jest dość duża kwota za opłaty celne na samochód z USA. Albo chcą
+            modelu, którego w zasadzie nie da się sprowadzić tanio.</p>
+          <p class="ci__desc">Tak, to tylko część pracy – są jeszcze koszty naprawy, które obliczamy samodzielnie. A
+            także sama specyfika aukcji – tylko menedżerowie rozumieją, które samochody można teraz łatwo 'złapać', jak
+            znaleźć równowagę między ceną a niekrytycznymi uszkodzeniami. Wybór odpowiedniego wariantu to kwestia
+            doświadczenia.</p>
+          <p class="ci__desc">Jeśli nie orientujesz się jeszcze w stawkach i chcesz samodzielnie lepiej zrozumieć, czego
+            potrzebujesz – kalkulator samochodowy z USA pomoże Ci w kwestiach finansowych. Prawo jest po stronie
+            amerykańskich samochodów – ocena na podstawie faktury pomaga uniknąć nieprzyjemnych niespodzianek w postaci
+            wyciągniętych z sufitu taryf.</p>
+          <p class="ci__desc">Kolejną zaletą jest szybkość procedury wwozu i realizacji płatności. Proces odprawy celnej
+            samochodu z USA jest szybki i nie wymaga zbędnej papierologii. Choć nie jest to aż tak istotne, bo tym
+            zajmiemy się my, na Państwa życzenie.</p>
+        </div>
+        <div class="section__header desktop__padding">
+          <h2><span>Jak korzystać z kalkulatora</span> samochodów z USA?</h2>
+        </div>
+        <div class="cars__info desktop__padding">
+          <p class="ci__desc">Aby dokładnie obliczyć wartość samochodu z USA, należy uwzględnić wiele czynników, takich
+            jak cena na aukcji, transport, cła, podatki, dokumenty i inne opłaty. Kalkulator, który mamy, jest
+            zaprojektowany w taki sposób, aby uwzględniał te wszystkie zmienne, zapewniając precyzyjną wycenę.</p>
+          <p class="ci__desc">Nasza firma długo dążyła do automatyzacji procesu obliczania wartości samochodu z USA, a
+            kalkulator stał się kluczowym elementem tego procesu. Dzięki niemu możemy szybko i dokładnie obliczyć
+            końcową cenę samochodu dla klienta, uwzględniając wszystkie istotne czynniki, takie jak cena na aukcji,
+            podatki, transport i dokumenty.</p>
+          <p class="ci__desc">Nasi klienci zawsze otrzymują jasną i przejrzystą informację o ostatecznej cenie samochodu
+            jeszcze przed jego wygraniem na aukcji. Pozwala im to być pewnym dokładności obliczeń i unikać
+            nieprzyjemnych niespodzianek podczas zakupu. Kalkulator zapewnia dużą efektywność i umożliwia szybkie
+            oszacowanie kosztów, co znacznie ułatwia podejmowanie decyzji naszym klientom.</p>
+          <p class="ci__desc">Masz jeszcze pytania? Skontaktuj się z nami – Twój samochód czeka na aukcji w USA lub
+            Kanadzie. A naszym zadaniem jest zapewnić Ci maksymalne korzyści przy zakupie auta z Ameryki.</p>
+          <p class="ci__desc">Odwiedź nas lub zadzwoń czy aplikuj na stronie i opowiemy Ci o opcjach samochodów z
+            Ameryki, które spełniają Twoje oczekiwania. Wyślemy przez komunikator modele, które będą licytowane na
+            aukcji, obliczymy koszty dostawy i transport pod dom.</p>
+          <p class="ci__desc">Nasza współpraca jest potwierdzona wsparciem naszych specjalistów, dzięki czemu zawsze
+            jesteś na bieżąco z każdym etapem realizacji Twojego zamówienia – czy to zakup, czy transport samochodu do
+            portu w Europie, czy to dostawa we wskazane miejsce.</p>
+        </div>
+      </section>
+      <div class="zapytaj">
+        <div class="zapytaj__form">
+          <h2 class="zf__title">Zapytaj</h2>
+          <div class="zf__form">
+            <div class="zff__inputs">
+              <input type="text" placeholder="Imię" required>
+              <input type="number" placeholder="+48" required>
+              <input type="email" placeholder="Email" required>
+            </div>
+            <textarea name="description" class="zff__textarea" placeholder="Wpisz tekst"></textarea>
+          </div>
+          <div class="zff__submit">
+            <button class="zffs__btn">Zadać pytanie</button>
+            <div class="zffs__privacy">
+              <input type="checkbox" name="privacy" class="zffsp__checkbox">
+              <p class="zffsp__text">
+                Akceptuję <a href="#">politykę prywatności</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="zapytaj__image">
+          <img src="../../assets/zapytaj.png" alt="zapytaj">
+          <div class="whatsapp__ads">
+            <div class="wa__container">
+              <img src="../../assets/icon/whatsapp-green.png" alt="">
+            </div>
+            <p class="wa__text">Lub napisz w <span>WhatsApp</span></p>
+          </div>
+        </div>
+      </div>
+      <section class="footer desktop__padding">
+        <div class="footer__head">
+          <img src="../../assets/logo_navbat.png" class="fh__logo" alt="">
+          <div class="fh__info">
+            <img src="../../assets/icon/mail.png" alt="">
+            <p>autozusa@gmail.com</p>
+          </div>
+          <div class="fh__info">
+            <img src="../../assets/icon/clock.png" alt="">
+            <p>Pon-Pt 9:00-17:00</p>
+          </div>
+          <div class="fh__info">
+            <img src="../../assets/icon/phone.png" alt="">
+            <p>+481111</p>
+          </div>
+          <div class="fh__info">
+            <img src="../../assets/icon/location.png" alt="">
+            <p>02-220, Polska, Warszawa, ulica Łopuszańska 13</p>
+          </div>
+          <div class="fh__socials">
+            <div class="fhs__container">
+              <img src="../../assets/icon/instagram.png" alt="">
+            </div>
+            <div class="fhs__container">
+              <img src="../../assets/icon/facebook.png" alt="">
+            </div>
+            <div class="fhs__container">
+              <img src="../../assets/icon/whatsapp.png" alt="">
+            </div>
+            <div class="fhs__container">
+              <img src="../../assets/icon/tiktok.png" alt="">
+            </div>
+          </div>
+          <p class="all__rights">
+            © Sherozbek, 2025
+          </p>
+        </div>
+        <div class="footer__links">
+          <h3 class="fl__title">Głowna</h3>
+          <a href="#" class="fl__link">Auto na zamówienie</a>
+          <a href="#" class="fl__link">Kalkulator</a>
+          <a href="#" class="fl__link">Śledzenie pojazdu</a>
+          <a href="#" class="fl__link">Blog</a>
+          <a href="#" class="fl__link">Kontakt</a>
+          <a href="#" class="fl__link">Samochody elektryczne</a>
+          <a href="#" class="fl__link">Hybrydy</a>
+          <a href="#" class="fl__link">Pickupy</a>
+          <a href="#" class="fl__link">Muscle cars</a>
+          <a href="#" class="fl__link">USŁUGI</a>
+        </div>
+        <div class="footer__links">
+          <h3 class="fl__title">O nas</h3>
+          <a href="" class="fl__link">O nas</a>
+          <a href="" class="fl__link">Jak pracujemy</a>
+          <a href="" class="fl__link">Pytania i odpowiedzi</a>
+          <a href="" class="fl__link">Zapłata</a>
+          <a href="" class="fl__link">Regulamin użytkownika</a>
+          <a href="" class="fl__link">Polityka prywatności</a>
+          <a href="" class="fl__link">Polityka plików cookie</a>
+          <a href="" class="fl__link">Mapa witryny</a>
+        </div>
+        <div class="footer__links">
+          <h3 class="fl__title">Często wyszukiwane</h3>
+          <a href="" class="fl__link">Auta z Kanady</a>
+          <a href="" class="fl__link">Auta z Europy</a>
+          <a href="" class="fl__link">Auta z Niemiec</a>
+          <a href="" class="fl__link">Auta z Francji</a>
+          <a href="" class="fl__link">Auta ze Szwajcarii</a>
+          <a href="" class="fl__link">Auta poleasingowe</a>
+        </div>
+
+      </section>
+    </main>
+
+
+  </div>
+
+
+  <!-- Swiper JS -->
+  <script src=" https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./kalkulator.js"></script>
+</body>
+
+</html>

@@ -58,6 +58,7 @@ header {
 }
 .header__nav img {
   padding-right: 50px;
+  z-index: 99;
 }
 .header__nav a {
   color: #fff;
@@ -250,6 +251,10 @@ header {
 @media only screen and (max-width: 680px) {
   .header__bottom {
     display: none;
+  }
+  .header__nav a:first-child {
+    display: block;
+    opacity: 1;
   }
   .header__nav a {
     display: none;
@@ -532,7 +537,7 @@ header {
 
 .section__header {
   padding-top: 80px;
-  padding-bottom: 40px;
+  padding-bottom: 30px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -543,7 +548,6 @@ header {
   font-size: 36px;
   font-family: "Unbounded", cursive;
   font-weight: 400;
-  padding-bottom: 30px;
 }
 
 .section__header h2 span {
@@ -645,6 +649,7 @@ header {
 
 /* TITLE */
 .car__title {
+  color: #000;
   font-size: 24px;
   font-weight: 500;
   padding: 10px 20px;
@@ -1113,77 +1118,6 @@ header {
   HWW ENDs
   *******************************
 */
-/* 
-.wi__cards {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  gap: 16px;
-}
-
-.wi__card {
-  background: #fff;
-  padding: 36px 36px;
-  border-radius: 16px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: 10px;
-}
-.wic__title {
-  font-size: 20px;
-  font-weight: 400;
-  font-family: "Unbounded", cursive;
-}
-.wic__desc {
-  font-size: 16px;
-  font-weight: 400;
-  margin-bottom: 15px;
-}
-.wic__options {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 16px;
-}
-.wico__dot {
-  width: 32px;
-  height: 4px;
-  background: #0090ff;
-}
-.wico__elem {
-  font-size: 14px;
-  font-weight: 300;
-  color: #000000b9;
-}
-
-.wi__card.wi__card__bg1 {
-  background: url("../../assets/worth-importing-1.png") no-repeat;
-  background-position: center;
-  background-size: cover;
-  min-height: 300px;
-}
-.wi__card.wi__card__bg2 {
-  background: url("../../assets/worth-importing-2.png") no-repeat;
-  background-position: center;
-  background-size: cover;
-  min-height: 300px;
-}
-
-@media (max-width: 900px) {
-  .wi__cards {
-    grid-template-columns: repeat(6, 1fr);
-  }
-}
-
-@media (max-width: 600px) {
-  .wi__cards {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .wi__card {
-    grid-column: span(1);
-  }
-} */
 
 .worth__importing {
   padding: 60px 0;
@@ -1736,30 +1670,6 @@ ZAPYTAJ**************************************
 **************************************
 */
 
-/* .zapytaj {
-  width: 100%;
-  min-height: 600px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #fff;
-}
-.zapytaj__form {
-  width: 60%;
-  min-height: 600px;
-}
-.zapytaj__image {
-  width: 40%;
-  min-height: 600px;
-  position: relative;
-}
-.zapytaj__image img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  max-height: 600px;
-} */
-
 .zapytaj {
   width: 100%;
   min-height: 700px;
@@ -1891,16 +1801,6 @@ ZAPYTAJ**************************************
   align-items: center;
   overflow: hidden;
 }
-
-/* .zapytaj__image::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-} */
 
 .zapytaj__image img {
   max-height: 700px;
@@ -2168,3 +2068,95 @@ FOOTER**************************************
 FOOTER**************************************
 **************************************
 */
+
+.zapytaj__layout {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000000be;
+  z-index: 100;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.zl__form {
+  position: relative;
+  width: 700px;
+  padding: 40px 50px;
+  border-radius: 30px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.zl__form__active {
+  display: flex;
+}
+.zl__form img {
+  position: absolute;
+  right: 40px;
+  top: 40px;
+  height: 16px;
+  cursor: pointer;
+}
+.zl__title {
+  font-size: 32px;
+  font-family: "Unbounded";
+  margin-bottom: 20px;
+}
+.input {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  background: #f1f1f1;
+  font-size: 16px;
+  color: #000;
+  border: none;
+  border-radius: 10px;
+  height: 60px;
+}
+.zl__form textarea {
+  width: 100%;
+  height: 100px;
+  border-radius: 10px;
+  border: none;
+  background: #f1f1f1;
+  padding: 10px 15px;
+}
+.zl__check {
+  display: flex;
+  gap: 10px;
+  font-size: 14px;
+  margin: 10px 0;
+}
+.zl__form .desc {
+  font-size: 12px;
+  margin: 10px 0;
+}
+.zl__form button {
+  width: 300px;
+  background: #0090ff;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  padding: 20px;
+  font-size: 18px;
+}
+@media (max-width: 740px) {
+  .zl__form {
+    width: 100%;
+    height: 100vh;
+    border-radius: 0;
+    padding: 20px 25px;
+  }
+
+  .zl__form button {
+    width: 100%;
+  }
+  .zl__form .desc {
+    font-size: 10px;
+  }
+}

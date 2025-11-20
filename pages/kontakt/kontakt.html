@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auto Z USA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Unbounded:wght@200..900&display=swap"
+    rel="stylesheet">
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" href="./kontakt.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <main>
+      <header>
+        <div class="header__top desktop__padding">
+          <div class="header__nav">
+            <a href="/index.html"><img src="/assets/logo_navbat.png" alt="logo"></a>
+            <a href="#">Śledzenie pojazdu</a>
+            <a href="#">O nas</a>
+            <a href="/pages/blog/blog.html">Blog</a>
+            <a href="/pages/kontakt/kontakt.html">Kontakt</a>
+          </div>
+          <div class="header__info">
+            <div class="header__info__elem">
+              <img src="/assets/icon/clock.png" alt="">
+              <p>Pon-Pt 9:00-17:00</p>
+            </div>
+            <div class="header__info__elem">
+              <img src="/assets/icon/phone.png" alt="">
+              <p>+481111</p>
+              <h3>+48 510 272 737</h3>
+            </div>
+          </div>
+          <div class="header__btn">
+            <div class="header__socials">
+              <div class="header__social"><img src="/assets/icon/instagram.png" alt="instagram"></div>
+              <div class="header__social"><img src="/assets/icon/facebook.png" alt="facebook"></div>
+              <div class="header__social"><img src="/assets/icon/whatsapp.png" alt="whatsapp"></div>
+              <div class="header__social"><img src="/assets/icon/tiktok.png" alt="tiktok"></div>
+            </div>
+            <div class="header__btn__heart">
+              <img src="/assets/icon/heart_outline.png" alt="heart">
+              <p>Ulubione auta</p>
+            </div>
+            <button>Zapytaj</button>
+            <img src="/assets/icon/hamburger.png" class="hamburger" alt="hamburger">
+          </div>
+        </div>
+        <div class="header__bottom desktop__padding">
+          <a href="/pages/zamowienie/zamowienie.html">Auto na zamowienie</a>
+          <a href="#">Samochody elektryczne</a>
+          <a href="#">Hybrydy</a>
+          <a href="#">Pickupy</a>
+          <a href="#">Muscle cars</a>
+          <a href="#">Uslugi</a>
+          <a href="/pages/kalkulator/kalkulator.html">Kalkulator</a>
+        </div>
+      </header>
+      <div class="sticky__header">
+        <div class="sticky__header__nav">
+          <a href="/index.html"><img src="/assets/logo_navbat.png" alt="logo"></a>
+          <div class="sticky__header__close">
+            <p>Zamknąć</p>
+            <img src="/assets/icon/close_big.png" alt="close">
+          </div>
+        </div>
+        <div class="sticky__header__links">
+          <a href="/pages/zamowienie/zamowienie.html">Auto na zamowienie</a>
+          <a href="#">Samochody elektryczne</a>
+          <a href="#">Hybrydy</a>
+          <a href="#">Pickupy</a>
+          <a href="#">Muscle cars</a>
+          <a href="#">Uslugi</a>
+          <a href="/pages/kalkulator/kalkulator.html">Kalkulator</a>
+          <a href="#">Śledzenie pojazdu</a>
+          <a href="#">O nas</a>
+          <a href="/pages/blog/blog.html">Blog</a>
+          <a href="/pages/kontakt/kontakt.html">Kontakt</a>
+        </div>
+      </div>
+      <div class="zapytaj__layout">
+        <div class="zl__form">
+          <img src="/assets/icon/close_big.png" class="close__img" alt="">
+          <h2 class="zl__title" class="input">Zapytaj</h2>
+          <input type="text" class="input" placeholder="Imię">
+          <input type="number" class="input" placeholder="+48">
+          <input type="email" class="input" placeholder="email">
+          <textarea placeholder="Wpisz tekst"></textarea>
+          <div class="zl__check">
+            <input type="checkbox">
+            <p>Akceptuję <a href="#">politykę prywatności</a></p>
+          </div>
+          <p class="desc">Administratorem Twoich danych osobowych będzie Purplelabs Będziemy
+            przetwarzać Twoje dane osobowe w celu nawiązania z Tobą kontaktu w związku ze
+            złożonym zgłoszeniem. Masz prawo żądania dostępu do treści swoich danych osobowych,
+            prawo do ich sprostowania, usunięcia lub ograniczenia przetwarzania, prawo do wyrażenia
+            sprzeciwu wobec dalszego przetwarzania Twoich danych, a także prawo wniesienia skargi
+            do Prezesa Urzędu Ochrony Danych Osobowych. Szczegółowe informacje o przetwarzaniu
+            danych osobowych znajdują się w Polityce Prywatności.</p>
+          <button>Zadać pytanie</button>
+        </div>
+      </div>
+      <div class="section__header desktop__padding">
+        <h2>Kontakt</h2>
+      </div>
+      <div class="kontakt__info desktop__padding">
+        <div class="ki__card">
+          <h3 class="ki__title">Skontaktuj się z nami</h3>
+          <div class="ki__icon__and__label">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M16.666 16.6667H3.33268C2.41221 16.6667 1.66602 15.9205 1.66602 15V4.9275C1.70486 4.03545 2.43979 3.33248 3.33268 3.33333H16.666C17.5865 3.33333 18.3327 4.07952 18.3327 5V15C18.3327 15.9205 17.5865 16.6667 16.666 16.6667ZM3.33268 6.55666V15H16.666V6.55666L9.99935 11L3.33268 6.55666ZM3.99935 5L9.99935 9L15.9994 5H3.99935Z"
+                fill="#1E1E1E" />
+            </svg>
+
+            <p>autozusa@gmail.com</p>
+          </div>
+          <div class="ki__icon__and__label">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M14.6629 17.505H14.6396C11.4382 17.4262 8.38318 16.1479 6.07962 13.9233C3.85422 11.6218 2.57519 8.56796 2.49619 5.36749C2.49147 4.91916 2.6675 4.48779 2.98462 4.17083L5.24628 1.91083C5.5717 1.58551 6.0992 1.58551 6.42462 1.91083L9.75795 5.24416C10.0833 5.56958 10.0833 6.09708 9.75795 6.42249L8.42795 7.74999C8.67462 8.6716 9.12901 9.52449 9.75628 10.2433C10.4738 10.8708 11.3256 11.3255 12.2463 11.5725L13.5796 10.2442C13.905 9.91884 14.4325 9.91884 14.7579 10.2442L18.0913 13.5775C18.4166 13.9029 18.4166 14.4304 18.0913 14.7558L15.8296 17.0167C15.5212 17.3282 15.1013 17.504 14.6629 17.505ZM5.83378 3.67916H5.82962L4.16295 5.34916C4.2309 8.11471 5.33488 10.7539 7.25628 12.7442C9.24664 14.6649 11.8853 15.7688 14.6504 15.8375L16.3229 14.1667L14.1629 12.0125L13.0854 13.0892C12.9313 13.245 12.7213 13.3329 12.5021 13.3333C12.4436 13.3334 12.3852 13.3272 12.3279 13.315C10.9393 13.0078 9.64994 12.3571 8.57795 11.4225C7.64333 10.3505 6.99263 9.06114 6.68545 7.67249C6.6275 7.39647 6.71311 7.10986 6.91295 6.91083L7.98962 5.83333L5.83378 3.67916Z"
+                fill="#1E1E1E" />
+            </svg>
+
+            <p>+481111</p>
+          </div>
+          <div class="ki__icon__and__label">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M9.99935 18.3333C5.39698 18.3333 1.66602 14.6024 1.66602 9.99999C1.66602 5.39762 5.39698 1.66666 9.99935 1.66666C14.6017 1.66666 18.3327 5.39762 18.3327 9.99999C18.3276 14.6003 14.5996 18.3283 9.99935 18.3333ZM9.99935 3.33332C6.31745 3.33332 3.33268 6.31809 3.33268 9.99999C3.33268 13.6819 6.31745 16.6667 9.99935 16.6667C13.6812 16.6667 16.666 13.6819 16.666 9.99999C16.6619 6.3198 13.6795 3.33746 9.99935 3.33332ZM14.166 10.8333H9.16602V5.83332H10.8327V9.16666H14.166V10.8333Z"
+                fill="#1E1E1E" />
+            </svg>
+
+            <p>Pon-Pt 9:00-17:00</p>
+          </div>
+          <p class="ki__desc">Możesz napisać do nas w sieciach społecznościowych:</p>
+          <div class="ki__icons">
+            <div class="ki__icon">
+              <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M7.5 1.35542C9.48795 1.35542 9.75904 1.35542 10.5723 1.35542C11.2952 1.35542 11.6566 1.53614 11.9277 1.62651C12.2892 1.80723 12.5602 1.89759 12.8313 2.16868C13.1024 2.43976 13.2831 2.71084 13.3735 3.07229C13.4639 3.34337 13.5542 3.70482 13.6446 4.42771C13.6446 5.24096 13.6446 5.42169 13.6446 7.5C13.6446 9.57831 13.6446 9.75904 13.6446 10.5723C13.6446 11.2952 13.4639 11.6566 13.3735 11.9277C13.1928 12.2892 13.1024 12.5602 12.8313 12.8313C12.5602 13.1024 12.2892 13.2831 11.9277 13.3735C11.6566 13.4639 11.2952 13.5542 10.5723 13.6446C9.75904 13.6446 9.57831 13.6446 7.5 13.6446C5.42169 13.6446 5.24096 13.6446 4.42771 13.6446C3.70482 13.6446 3.34337 13.4639 3.07229 13.3735C2.71084 13.1928 2.43976 13.1024 2.16868 12.8313C1.89759 12.5602 1.71687 12.2892 1.62651 11.9277C1.53614 11.6566 1.44578 11.2952 1.35542 10.5723C1.35542 9.75904 1.35542 9.57831 1.35542 7.5C1.35542 5.42169 1.35542 5.24096 1.35542 4.42771C1.35542 3.70482 1.53614 3.34337 1.62651 3.07229C1.80723 2.71084 1.89759 2.43976 2.16868 2.16868C2.43976 1.89759 2.71084 1.71687 3.07229 1.62651C3.34337 1.53614 3.70482 1.44578 4.42771 1.35542C5.24096 1.35542 5.51205 1.35542 7.5 1.35542ZM7.5 0C5.42169 0 5.24096 0 4.42771 0C3.61446 0 3.07229 0.180723 2.62048 0.361446C2.16868 0.542169 1.71687 0.813254 1.26506 1.26506C0.813254 1.71687 0.632531 2.07831 0.361446 2.62048C0.180723 3.07229 0.0903615 3.61446 0 4.42771C0 5.24096 0 5.51205 0 7.5C0 9.57831 0 9.75904 0 10.5723C0 11.3855 0.180723 11.9277 0.361446 12.3795C0.542169 12.8313 0.813254 13.2831 1.26506 13.7349C1.71687 14.1867 2.07831 14.3675 2.62048 14.6386C3.07229 14.8193 3.61446 14.9096 4.42771 15C5.24096 15 5.51205 15 7.5 15C9.48795 15 9.75904 15 10.5723 15C11.3855 15 11.9277 14.8193 12.3795 14.6386C12.8313 14.4578 13.2831 14.1867 13.7349 13.7349C14.1867 13.2831 14.3675 12.9217 14.6386 12.3795C14.8193 11.9277 14.9096 11.3855 15 10.5723C15 9.75904 15 9.48795 15 7.5C15 5.51205 15 5.24096 15 4.42771C15 3.61446 14.8193 3.07229 14.6386 2.62048C14.4578 2.16868 14.1867 1.71687 13.7349 1.26506C13.2831 0.813254 12.9217 0.632531 12.3795 0.361446C11.9277 0.180723 11.3855 0.0903615 10.5723 0C9.75904 0 9.57831 0 7.5 0Z"
+                  fill="#1E1E1E" />
+                <path
+                  d="M7.5 3.61446C5.33133 3.61446 3.61446 5.33133 3.61446 7.5C3.61446 9.66868 5.33133 11.3855 7.5 11.3855C9.66868 11.3855 11.3855 9.66868 11.3855 7.5C11.3855 5.33133 9.66868 3.61446 7.5 3.61446ZM7.5 10.0301C6.14458 10.0301 4.96988 8.94578 4.96988 7.5C4.96988 6.14458 6.05422 4.96988 7.5 4.96988C8.85542 4.96988 10.0301 6.05422 10.0301 7.5C10.0301 8.85542 8.85542 10.0301 7.5 10.0301Z"
+                  fill="#1E1E1E" />
+                <path
+                  d="M11.4759 4.42771C11.975 4.42771 12.3795 4.02315 12.3795 3.5241C12.3795 3.02504 11.975 2.62048 11.4759 2.62048C10.9769 2.62048 10.5723 3.02504 10.5723 3.5241C10.5723 4.02315 10.9769 4.42771 11.4759 4.42771Z"
+                  fill="#1E1E1E" />
+              </svg>
+
+            </div>
+            <div class="ki__icon">
+              <svg width="9" height="18" viewBox="0 0 9 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M5.74281 9.27361H8.53444L8.97275 6.42041H5.74224V4.86101C5.74224 3.67574 6.12718 2.62471 7.22918 2.62471H9V0.134806C8.68887 0.0925362 8.03085 0 6.78747 0C4.19114 0 2.669 1.37947 2.669 4.52228V6.42041H0V9.27361H2.669V17.1158C3.19758 17.1957 3.73297 17.25 4.28255 17.25C4.77933 17.25 5.26419 17.2043 5.74281 17.1392V9.27361Z"
+                  fill="#1E1E1E" />
+              </svg>
+
+
+            </div>
+            <div class="ki__icon">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M13.4451 2.29687C11.9634 0.820312 9.9878 0 7.90244 0C3.56707 0 0.0548772 3.5 0.0548772 7.82031C0.0548772 9.1875 0.439024 10.5547 1.09756 11.7031L0 15.75L4.17073 14.6562C5.32317 15.2578 6.58536 15.5859 7.90244 15.5859C12.2378 15.5859 15.75 12.0859 15.75 7.76563C15.6951 5.74219 14.9268 3.77344 13.4451 2.29687ZM11.689 10.6094C11.5244 11.0469 10.7561 11.4844 10.372 11.5391C10.0427 11.5937 9.60366 11.5938 9.16463 11.4844C8.89024 11.375 8.5061 11.2656 8.06707 11.0469C6.09146 10.2266 4.82927 8.25781 4.71951 8.09375C4.60976 7.98437 3.89634 7.05469 3.89634 6.07031C3.89634 5.08594 4.39024 4.64844 4.55488 4.42969C4.71951 4.21094 4.93902 4.21094 5.10366 4.21094C5.21341 4.21094 5.37805 4.21094 5.4878 4.21094C5.59756 4.21094 5.76219 4.15625 5.92683 4.53906C6.09146 4.92187 6.47561 5.90625 6.53049 5.96094C6.58536 6.07031 6.58536 6.17969 6.53049 6.28906C6.47561 6.39844 6.42073 6.50781 6.31097 6.61719C6.20122 6.72656 6.09146 6.89062 6.03658 6.94531C5.92683 7.05469 5.81707 7.16406 5.92683 7.32812C6.03659 7.54687 6.42073 8.14844 7.02439 8.69531C7.79268 9.35156 8.39634 9.57031 8.61585 9.67969C8.83537 9.78906 8.94512 9.73437 9.05488 9.625C9.16463 9.51562 9.54878 9.07812 9.65854 8.85938C9.76829 8.64062 9.93293 8.69531 10.0976 8.75C10.2622 8.80469 11.25 9.29688 11.4146 9.40625C11.6341 9.51562 11.7439 9.57031 11.7988 9.625C11.8537 9.78906 11.8537 10.1719 11.689 10.6094Z"
+                  fill="#1E1E1E" />
+              </svg>
+
+            </div>
+            <div class="ki__icon">
+              <svg width="15" height="17" viewBox="0 0 15 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M14.2322 3.94018C13.1872 3.94016 12.185 3.52502 11.4461 2.78609C10.7072 2.04716 10.2921 1.04498 10.2921 0H7.47713V11.023C7.47661 11.5256 7.31792 12.0153 7.02356 12.4226C6.72921 12.8299 6.31411 13.1343 5.83711 13.2926C5.36011 13.4508 4.8454 13.4549 4.36593 13.3043C3.88647 13.1537 3.46657 12.856 3.16575 12.4534C2.86493 12.0508 2.69845 11.5637 2.68991 11.0612C2.68136 10.5587 2.83119 10.0663 3.11815 9.65372C3.40511 9.24113 3.81464 8.92933 4.28871 8.7625C4.76278 8.59567 5.27733 8.58227 5.75944 8.72422V5.98778C4.73488 5.84963 3.69255 6.02733 2.77165 6.49716C1.85074 6.96699 1.09509 7.70659 0.605584 8.61719C0.116083 9.52779 -0.0839654 10.5661 0.0321519 11.5934C0.148269 12.6206 0.575025 13.5881 1.25543 14.3664C1.93584 15.1448 2.83752 15.697 3.84007 15.9495C4.84261 16.2019 5.8983 16.1424 6.86617 15.7791C7.83405 15.4157 8.66803 14.7657 9.25676 13.9159C9.8455 13.0661 10.161 12.0569 10.161 11.023L10.2431 5.45125C11.3998 6.30031 12.7976 6.75716 14.2324 6.75502L14.2322 3.94018Z"
+                  fill="#1E1E1E" />
+              </svg>
+
+            </div>
+          </div>
+        </div>
+        <div class="ki__card">
+          <h3 class="ki__title">Gdzie jesteśmy</h3>
+          <div class="ki__icon__and__label">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M9.99935 18.3333C5.39698 18.3333 1.66602 14.6024 1.66602 9.99999C1.66602 5.39762 5.39698 1.66666 9.99935 1.66666C14.6017 1.66666 18.3327 5.39762 18.3327 9.99999C18.3276 14.6003 14.5996 18.3283 9.99935 18.3333ZM9.99935 3.33332C6.31745 3.33332 3.33268 6.31809 3.33268 9.99999C3.33268 13.6819 6.31745 16.6667 9.99935 16.6667C13.6812 16.6667 16.666 13.6819 16.666 9.99999C16.6619 6.3198 13.6795 3.33746 9.99935 3.33332ZM14.166 10.8333H9.16602V5.83332H10.8327V9.16666H14.166V10.8333Z"
+                fill="#1E1E1E" />
+            </svg>
+
+            <p>Pon-Pt 9:00-17:00</p>
+          </div>
+          <div class="ki__icon__and__label">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M9.99935 17.5C8.94679 16.6022 7.97117 15.6179 7.08268 14.5575C5.74935 12.965 4.16602 10.5933 4.16602 8.33334C4.16483 5.97297 5.58622 3.8445 7.76691 2.94118C9.94759 2.03785 12.4577 2.53771 14.126 4.20751C15.2231 5.29968 15.8376 6.78534 15.8327 8.33334C15.8327 10.5933 14.2494 12.965 12.916 14.5575C12.0275 15.6179 11.0519 16.6022 9.99935 17.5ZM9.99935 4.16668C7.69931 4.16943 5.83544 6.0333 5.83268 8.33334C5.83268 9.30501 6.27185 10.9875 8.36185 13.4883C8.87697 14.1034 9.42353 14.6914 9.99935 15.25C10.5752 14.6921 11.1221 14.1049 11.6377 13.4908C13.7268 10.9867 14.166 9.30418 14.166 8.33334C14.1633 6.0333 12.2994 4.16943 9.99935 4.16668ZM9.99935 10.8333C8.61864 10.8333 7.49935 9.71406 7.49935 8.33334C7.49935 6.95263 8.61864 5.83334 9.99935 5.83334C11.3801 5.83334 12.4994 6.95263 12.4994 8.33334C12.4994 8.99639 12.236 9.63227 11.7671 10.1011C11.2983 10.57 10.6624 10.8333 9.99935 10.8333Z"
+                fill="#1E1E1E" />
+            </svg>
+
+            <p>02-220, Polska,Warszawa,ulica Łopuszańska 13</p>
+          </div>
+        </div>
+        <div class="ki__card">
+          <h3 class="ki__title">Dane prawne</h3>
+          <div class="ki__infos">
+            <div class="ki__info">
+              <p class="kii__title">Nazwa firmy:</p>
+              <p class="kii__text">Auta z USA</p>
+            </div>
+            <div class="ki__info">
+              <p class="kii__title">NIP:</p>
+              <p class="kii__text">525-28-34-567</p>
+            </div>
+            <div class="ki__info">
+              <p class="kii__title">REGON:</p>
+              <p class="kii__text">146789012</p>
+            </div>
+            <div class="ki__info">
+              <p class="kii__title">KRS:</p>
+              <p class="kii__text">0000456789</p>
+            </div>
+          </div>
+          <div class="ki__info">
+            <p class="kii__title">Osoba kontaktowa:</p>
+            <p class="kii__text">Jan Kowalski – Kierownik sprzedaży</p>
+          </div>
+        </div>
+      </div>
+      <div class="kontakt__map desktop__padding">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2445.9404468984494!2d20.9537474!3d52.1899552!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4719335af62001bb%3A0x29c6bc78ecf0a840!2zxYFvcHVzemHFhHNrYSAxMywgMDItMjIwIFdhcnN6YXdhLCDQn9C-0LvRjNGI0LA!5e0!3m2!1sru!2s!4v1763537484276!5m2!1sru!2s"
+          class="km_map" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="section__header desktop__padding">
+        <h2>Nasze biuro</h2>
+      </div>
+      <div class="gallery desktop__padding">
+        <div class="g__left">
+          <img src="../../assets/kontakt1.png" alt="kontakt1.png">
+        </div>
+        <div class="g__right">
+          <div class="gr__double">
+            <div class="gr__image">
+              <img src="../../assets/kontakt2.png" class="gr__img" alt="">
+            </div>
+            <div class="gr__image">
+              <img src="../../assets/kontakt3.png" class="gr__img" alt="">
+            </div>
+          </div>
+          <div class="gr__double">
+            <div class="gr__image">
+              <img src="../../assets/kontakt4.png" class="gr__img" alt="">
+            </div>
+            <div class="gr__image">
+              <img src="../../assets/kontakt5.png" class="gr__img" alt="">
+            </div>
+          </div>
+          <div class="gr__one last__image">
+            <img src="../../assets/kontakt6.png" class="gr__img" alt="">
+            <div class="go__icon">
+              <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_291_8067)">
+                  <path
+                    d="M53.9991 9.09362C56.4842 9.09362 58.4991 7.07931 58.4991 4.59362C58.4991 2.1085 56.4842 0.0936279 53.9991 0.0936279C51.514 0.0936279 49.4991 2.1085 49.4991 4.59362C49.5019 7.07818 51.5151 9.09081 53.9991 9.09362ZM53.9991 3.094C54.8274 3.094 55.4993 3.7652 55.4993 4.59362C55.4993 5.42205 54.8275 6.09381 53.9991 6.09381C53.1707 6.09381 52.4989 5.42205 52.4989 4.59362C52.4995 3.76577 53.1707 3.09456 53.9991 3.094ZM17.9991 24.0938H14.9993C14.171 24.0938 13.4991 24.7656 13.4991 25.594C13.4991 26.4224 14.1709 27.0936 14.9993 27.0936H17.9991C20.4831 27.0908 22.4963 25.0782 22.4991 22.5936V10.5938C22.4963 8.10981 20.4831 6.09662 17.9991 6.09381H14.9993C14.171 6.09381 13.4991 6.76558 13.4991 7.594C13.4991 8.42242 14.1709 9.09362 14.9993 9.09362H17.9991C18.8274 9.09418 19.4988 9.76539 19.4993 10.5938V15.0938H14.9993C14.171 15.0938 13.4991 15.7656 13.4991 16.594C13.4991 17.4224 14.1709 18.0936 14.9993 18.0936H19.4993V22.5936C19.4988 23.4219 18.8275 24.0932 17.9991 24.0938ZM29.9989 27.0936C32.4835 27.0908 34.4961 25.0782 34.4989 22.5936V16.594C34.4961 14.1094 32.4835 12.0968 29.9989 12.094C29.4871 12.0989 28.9794 12.1924 28.4993 12.3703V10.5938C28.4999 9.76553 29.1711 9.09418 29.9989 9.09362H32.9993C33.8276 9.09362 34.4989 8.42242 34.4989 7.594C34.4989 6.76558 33.8277 6.09381 32.9993 6.09381H29.9989C27.5149 6.09662 25.5017 8.10981 25.4989 10.5938V22.5936C25.5017 25.0782 27.5149 27.0908 29.9989 27.0936ZM28.4993 16.594C28.4993 15.7657 29.1705 15.0938 29.9989 15.0938C30.8274 15.0938 31.4991 15.7656 31.4991 16.594V22.5936C31.4991 23.4219 30.8274 24.0938 29.9989 24.0938C29.1705 24.0938 28.4993 23.422 28.4993 22.5936V16.594ZM41.9993 27.0936C44.4833 27.0908 46.4965 25.0782 46.4993 22.5936V10.5938C46.4993 8.10868 44.4844 6.09381 41.9993 6.09381C39.5136 6.09381 37.4993 8.10868 37.4993 10.5938V22.5936C37.5021 25.0782 39.5147 27.0908 41.9993 27.0936ZM40.4991 10.5938C40.4991 9.76553 41.1709 9.09362 41.9993 9.09362C42.8277 9.09362 43.4989 9.76539 43.4989 10.5938V22.5936C43.4989 23.4219 42.8277 24.0938 41.9993 24.0938C41.1709 24.0938 40.4991 23.422 40.4991 22.5936V10.5938ZM51.6244 18.2826C51.4308 18.4215 51.2731 18.6045 51.1644 18.8165C51.0557 19.0284 50.9991 19.2633 50.9993 19.5015V27.6374C55.0493 26.8184 58.9051 24.8699 59.9086 23.3676C59.4746 21.2752 57.1604 19.4976 52.9813 18.0804C52.7551 18.0049 52.5144 17.9838 52.2786 18.0189C52.0428 18.0541 51.8186 18.1444 51.6244 18.2826ZM8.99913 27.6375V19.5015C8.99899 19.2632 8.94211 19.0284 8.83318 18.8164C8.72425 18.6044 8.56642 18.4214 8.37273 18.2825C8.17904 18.1437 7.95507 18.0529 7.71935 18.0178C7.48363 17.9827 7.24293 18.0042 7.01717 18.0805C2.83751 19.4982 0.523672 21.2757 0.0898438 23.3675C1.0932 24.87 4.949 26.8185 8.99913 27.6375Z"
+                    fill="white" />
+                  <path
+                    d="M30.7502 33.0834V33.0768H29.25V33.0834C12.2597 32.9719 2.6789 29.1722 0 27.0936V48.094C0 54.003 15.0924 57.094 29.9998 57.094C44.9077 57.094 60.0001 54.003 60.0001 48.094V27.0936C57.3212 29.1722 47.7405 32.9717 30.7502 33.0834Z"
+                    fill="white" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_291_8067">
+                    <rect width="60" height="60" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="section__header desktop__padding">
+        <h2>Zespół</h2>
+      </div>
+      <div class="reception__container desktop__padding">
+        <div class="reception reception__active">
+          <h3 class="reception__title">
+            Recepcja
+            <img class="rt__image" src="../../assets/icon/arrow.png" alt="">
+          </h3>
+          <div class="reception__cards">
+            <div class="reception__card">
+              <div class="rc__image">
+                <img src="../../assets/thegirl.png" alt="">
+              </div>
+              <div class="rc__info">
+                <div class="rci__top">
+                  <h2 class="rci__title">
+                    Agnieszka Szydłak
+                  </h2>
+                  <p class="rci__career">
+                    Recepcja
+                  </p>
+                </div>
+                <div class="rci__bottom">
+                  <div class="rci__contact">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M16.666 16.6666H3.33268C2.41221 16.6666 1.66602 15.9204 1.66602 14.9999V4.92742C1.70486 4.03538 2.43979 3.33241 3.33268 3.33325H16.666C17.5865 3.33325 18.3327 4.07945 18.3327 4.99992V14.9999C18.3327 15.9204 17.5865 16.6666 16.666 16.6666ZM3.33268 6.55659V14.9999H16.666V6.55659L9.99935 10.9999L3.33268 6.55659ZM3.99935 4.99992L9.99935 8.99992L15.9994 4.99992H3.99935Z"
+                        fill="#1E1E1E" />
+                    </svg>
+                    <p class="rcic__text">autozusa@gmail.com</p>
+
+                  </div>
+                  <div class="rci__contact">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M14.6629 17.5049H14.6396C11.4382 17.4261 8.38318 16.1478 6.07962 13.9232C3.85422 11.6218 2.57519 8.56787 2.49619 5.3674C2.49147 4.91907 2.6675 4.4877 2.98462 4.17074L5.24628 1.91074C5.5717 1.58542 6.0992 1.58542 6.42462 1.91074L9.75795 5.24407C10.0833 5.56949 10.0833 6.09699 9.75795 6.4224L8.42795 7.7499C8.67462 8.6715 9.12901 9.5244 9.75628 10.2432C10.4738 10.8707 11.3256 11.3254 12.2463 11.5724L13.5796 10.2441C13.905 9.91875 14.4325 9.91875 14.7579 10.2441L18.0913 13.5774C18.4166 13.9028 18.4166 14.4303 18.0913 14.7557L15.8296 17.0166C15.5212 17.3282 15.1013 17.5039 14.6629 17.5049ZM5.83378 3.67907H5.82962L4.16295 5.34907C4.2309 8.11462 5.33488 10.7538 7.25628 12.7441C9.24664 14.6648 11.8853 15.7687 14.6504 15.8374L16.3229 14.1666L14.1629 12.0124L13.0854 13.0891C12.9313 13.2449 12.7213 13.3328 12.5021 13.3332C12.4436 13.3333 12.3852 13.3271 12.3279 13.3149C10.9393 13.0077 9.64994 12.357 8.57795 11.4224C7.64333 10.3504 6.99263 9.06104 6.68545 7.6724C6.6275 7.39637 6.71311 7.10977 6.91295 6.91074L7.98962 5.83324L5.83378 3.67907Z"
+                        fill="#1E1E1E" />
+                    </svg>
+
+                    <p class="rcic__text">+481111</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="reception__card">
+              <div class="rc__image">
+                <img src="../../assets/thegirl.png" alt="">
+              </div>
+              <div class="rc__info">
+                <div class="rci__top">
+                  <h2 class="rci__title">
+                    Agnieszka Szydłak
+                  </h2>
+                  <p class="rci__career">
+                    Recepcja
+                  </p>
+                </div>
+                <div class="rci__bottom">
+                  <div class="rci__contact">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M16.666 16.6666H3.33268C2.41221 16.6666 1.66602 15.9204 1.66602 14.9999V4.92742C1.70486 4.03538 2.43979 3.33241 3.33268 3.33325H16.666C17.5865 3.33325 18.3327 4.07945 18.3327 4.99992V14.9999C18.3327 15.9204 17.5865 16.6666 16.666 16.6666ZM3.33268 6.55659V14.9999H16.666V6.55659L9.99935 10.9999L3.33268 6.55659ZM3.99935 4.99992L9.99935 8.99992L15.9994 4.99992H3.99935Z"
+                        fill="#1E1E1E" />
+                    </svg>
+                    <p class="rcic__text">autozusa@gmail.com</p>
+
+                  </div>
+                  <div class="rci__contact">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M14.6629 17.5049H14.6396C11.4382 17.4261 8.38318 16.1478 6.07962 13.9232C3.85422 11.6218 2.57519 8.56787 2.49619 5.3674C2.49147 4.91907 2.6675 4.4877 2.98462 4.17074L5.24628 1.91074C5.5717 1.58542 6.0992 1.58542 6.42462 1.91074L9.75795 5.24407C10.0833 5.56949 10.0833 6.09699 9.75795 6.4224L8.42795 7.7499C8.67462 8.6715 9.12901 9.5244 9.75628 10.2432C10.4738 10.8707 11.3256 11.3254 12.2463 11.5724L13.5796 10.2441C13.905 9.91875 14.4325 9.91875 14.7579 10.2441L18.0913 13.5774C18.4166 13.9028 18.4166 14.4303 18.0913 14.7557L15.8296 17.0166C15.5212 17.3282 15.1013 17.5039 14.6629 17.5049ZM5.83378 3.67907H5.82962L4.16295 5.34907C4.2309 8.11462 5.33488 10.7538 7.25628 12.7441C9.24664 14.6648 11.8853 15.7687 14.6504 15.8374L16.3229 14.1666L14.1629 12.0124L13.0854 13.0891C12.9313 13.2449 12.7213 13.3328 12.5021 13.3332C12.4436 13.3333 12.3852 13.3271 12.3279 13.3149C10.9393 13.0077 9.64994 12.357 8.57795 11.4224C7.64333 10.3504 6.99263 9.06104 6.68545 7.6724C6.6275 7.39637 6.71311 7.10977 6.91295 6.91074L7.98962 5.83324L5.83378 3.67907Z"
+                        fill="#1E1E1E" />
+                    </svg>
+
+                    <p class="rcic__text">autozusa@gmail.com</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="reception__card">
+              <div class="rc__image">
+                <img src="../../assets/thegirl.png" alt="">
+              </div>
+              <div class="rc__info">
+                <div class="rci__top">
+                  <h2 class="rci__title">
+                    Agnieszka Szydłak
+                  </h2>
+                  <p class="rci__career">
+                    Recepcja
+                  </p>
+                </div>
+                <div class="rci__bottom">
+                  <div class="rci__contact">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M16.666 16.6666H3.33268C2.41221 16.6666 1.66602 15.9204 1.66602 14.9999V4.92742C1.70486 4.03538 2.43979 3.33241 3.33268 3.33325H16.666C17.5865 3.33325 18.3327 4.07945 18.3327 4.99992V14.9999C18.3327 15.9204 17.5865 16.6666 16.666 16.6666ZM3.33268 6.55659V14.9999H16.666V6.55659L9.99935 10.9999L3.33268 6.55659ZM3.99935 4.99992L9.99935 8.99992L15.9994 4.99992H3.99935Z"
+                        fill="#1E1E1E" />
+                    </svg>
+                    <p class="rcic__text">autozusa@gmail.com</p>
+
+                  </div>
+                  <div class="rci__contact">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M14.6629 17.5049H14.6396C11.4382 17.4261 8.38318 16.1478 6.07962 13.9232C3.85422 11.6218 2.57519 8.56787 2.49619 5.3674C2.49147 4.91907 2.6675 4.4877 2.98462 4.17074L5.24628 1.91074C5.5717 1.58542 6.0992 1.58542 6.42462 1.91074L9.75795 5.24407C10.0833 5.56949 10.0833 6.09699 9.75795 6.4224L8.42795 7.7499C8.67462 8.6715 9.12901 9.5244 9.75628 10.2432C10.4738 10.8707 11.3256 11.3254 12.2463 11.5724L13.5796 10.2441C13.905 9.91875 14.4325 9.91875 14.7579 10.2441L18.0913 13.5774C18.4166 13.9028 18.4166 14.4303 18.0913 14.7557L15.8296 17.0166C15.5212 17.3282 15.1013 17.5039 14.6629 17.5049ZM5.83378 3.67907H5.82962L4.16295 5.34907C4.2309 8.11462 5.33488 10.7538 7.25628 12.7441C9.24664 14.6648 11.8853 15.7687 14.6504 15.8374L16.3229 14.1666L14.1629 12.0124L13.0854 13.0891C12.9313 13.2449 12.7213 13.3328 12.5021 13.3332C12.4436 13.3333 12.3852 13.3271 12.3279 13.3149C10.9393 13.0077 9.64994 12.357 8.57795 11.4224C7.64333 10.3504 6.99263 9.06104 6.68545 7.6724C6.6275 7.39637 6.71311 7.10977 6.91295 6.91074L7.98962 5.83324L5.83378 3.67907Z"
+                        fill="#1E1E1E" />
+                    </svg>
+
+                    <p class="rcic__text">autozusa@gmail.com</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="reception__card">
+              <div class="rc__image">
+                <img src="../../assets/theuser.png" alt="">
+              </div>
+              <div class="rc__info">
+                <div class="rci__top">
+                  <h2 class="rci__title">
+                    Agnieszka Szydłak
+                  </h2>
+                  <p class="rci__career">
+                    Recepcja
+                  </p>
+                </div>
+                <div class="rci__bottom">
+                  <div class="rci__contact">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M16.666 16.6666H3.33268C2.41221 16.6666 1.66602 15.9204 1.66602 14.9999V4.92742C1.70486 4.03538 2.43979 3.33241 3.33268 3.33325H16.666C17.5865 3.33325 18.3327 4.07945 18.3327 4.99992V14.9999C18.3327 15.9204 17.5865 16.6666 16.666 16.6666ZM3.33268 6.55659V14.9999H16.666V6.55659L9.99935 10.9999L3.33268 6.55659ZM3.99935 4.99992L9.99935 8.99992L15.9994 4.99992H3.99935Z"
+                        fill="#1E1E1E" />
+                    </svg>
+                    <p class="rcic__text">autozusa@gmail.com</p>
+
+                  </div>
+                  <div class="rci__contact">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M14.6629 17.5049H14.6396C11.4382 17.4261 8.38318 16.1478 6.07962 13.9232C3.85422 11.6218 2.57519 8.56787 2.49619 5.3674C2.49147 4.91907 2.6675 4.4877 2.98462 4.17074L5.24628 1.91074C5.5717 1.58542 6.0992 1.58542 6.42462 1.91074L9.75795 5.24407C10.0833 5.56949 10.0833 6.09699 9.75795 6.4224L8.42795 7.7499C8.67462 8.6715 9.12901 9.5244 9.75628 10.2432C10.4738 10.8707 11.3256 11.3254 12.2463 11.5724L13.5796 10.2441C13.905 9.91875 14.4325 9.91875 14.7579 10.2441L18.0913 13.5774C18.4166 13.9028 18.4166 14.4303 18.0913 14.7557L15.8296 17.0166C15.5212 17.3282 15.1013 17.5039 14.6629 17.5049ZM5.83378 3.67907H5.82962L4.16295 5.34907C4.2309 8.11462 5.33488 10.7538 7.25628 12.7441C9.24664 14.6648 11.8853 15.7687 14.6504 15.8374L16.3229 14.1666L14.1629 12.0124L13.0854 13.0891C12.9313 13.2449 12.7213 13.3328 12.5021 13.3332C12.4436 13.3333 12.3852 13.3271 12.3279 13.3149C10.9393 13.0077 9.64994 12.357 8.57795 11.4224C7.64333 10.3504 6.99263 9.06104 6.68545 7.6724C6.6275 7.39637 6.71311 7.10977 6.91295 6.91074L7.98962 5.83324L5.83378 3.67907Z"
+                        fill="#1E1E1E" />
+                    </svg>
+
+                    <p class="rcic__text">autozusa@gmail.com</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="zapytaj">
+        <div class="zapytaj__form">
+          <h2 class="zf__title">Zapytaj</h2>
+          <div class="zf__form">
+            <div class="zff__inputs">
+              <input type="text" placeholder="Imię" required>
+              <input type="number" placeholder="+48" required>
+              <input type="email" placeholder="Email" required>
+            </div>
+            <textarea name="description" class="zff__textarea" placeholder="Wpisz tekst"></textarea>
+          </div>
+          <div class="zff__submit">
+            <button class="zffs__btn">Zadać pytanie</button>
+            <div class="zffs__privacy">
+              <input type="checkbox" name="privacy" class="zffsp__checkbox">
+              <p class="zffsp__text">
+                Akceptuję <a href="#">politykę prywatności</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="zapytaj__image">
+          <img src="../../assets/zapytaj.png" alt="zapytaj">
+          <div class="whatsapp__ads">
+            <div class="wa__container">
+              <img src="../../assets/icon/whatsapp-green.png" alt="">
+            </div>
+            <p class="wa__text">Lub napisz w <span>WhatsApp</span></p>
+          </div>
+        </div>
+      </div>
+      <section class="footer desktop__padding">
+        <div class="footer__head">
+          <img src="../../assets/logo_navbat.png" class="fh__logo" alt="">
+          <div class="fh__info">
+            <img src="../../assets/icon/mail.png" alt="">
+            <p>autozusa@gmail.com</p>
+          </div>
+          <div class="fh__info">
+            <img src="../../assets/icon/clock.png" alt="">
+            <p>Pon-Pt 9:00-17:00</p>
+          </div>
+          <div class="fh__info">
+            <img src="../../assets/icon/phone.png" alt="">
+            <p>+481111</p>
+          </div>
+          <div class="fh__info">
+            <img src="../../assets/icon/location.png" alt="">
+            <p>02-220, Polska, Warszawa, ulica Łopuszańska 13</p>
+          </div>
+          <div class="fh__socials">
+            <div class="fhs__container">
+              <img src="../../assets/icon/instagram.png" alt="">
+            </div>
+            <div class="fhs__container">
+              <img src="../../assets/icon/facebook.png" alt="">
+            </div>
+            <div class="fhs__container">
+              <img src="../../assets/icon/whatsapp.png" alt="">
+            </div>
+            <div class="fhs__container">
+              <img src="../../assets/icon/tiktok.png" alt="">
+            </div>
+          </div>
+          <p class="all__rights">
+            © Sherozbek, 2025
+          </p>
+        </div>
+        <div class="footer__links">
+          <h3 class="fl__title">Głowna</h3>
+          <a href="#" class="fl__link">Auto na zamówienie</a>
+          <a href="#" class="fl__link">Kalkulator</a>
+          <a href="#" class="fl__link">Śledzenie pojazdu</a>
+          <a href="#" class="fl__link">Blog</a>
+          <a href="#" class="fl__link">Kontakt</a>
+          <a href="#" class="fl__link">Samochody elektryczne</a>
+          <a href="#" class="fl__link">Hybrydy</a>
+          <a href="#" class="fl__link">Pickupy</a>
+          <a href="#" class="fl__link">Muscle cars</a>
+          <a href="#" class="fl__link">USŁUGI</a>
+        </div>
+        <div class="footer__links">
+          <h3 class="fl__title">O nas</h3>
+          <a href="" class="fl__link">O nas</a>
+          <a href="" class="fl__link">Jak pracujemy</a>
+          <a href="" class="fl__link">Pytania i odpowiedzi</a>
+          <a href="" class="fl__link">Zapłata</a>
+          <a href="" class="fl__link">Regulamin użytkownika</a>
+          <a href="" class="fl__link">Polityka prywatności</a>
+          <a href="" class="fl__link">Polityka plików cookie</a>
+          <a href="" class="fl__link">Mapa witryny</a>
+        </div>
+        <div class="footer__links">
+          <h3 class="fl__title">Często wyszukiwane</h3>
+          <a href="" class="fl__link">Auta z Kanady</a>
+          <a href="" class="fl__link">Auta z Europy</a>
+          <a href="" class="fl__link">Auta z Niemiec</a>
+          <a href="" class="fl__link">Auta z Francji</a>
+          <a href="" class="fl__link">Auta ze Szwajcarii</a>
+          <a href="" class="fl__link">Auta poleasingowe</a>
+        </div>
+
+      </section>
+    </main>
+  </div>
+
+
+  <!-- Swiper JS -->
+  <script src=" https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./kontakt.js"></script>
+</body>
+
+</html>
