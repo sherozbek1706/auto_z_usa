@@ -1,47 +1,3 @@
-const hamburger = document.querySelector(".hamburger");
-const sticky_header = document.querySelector(".sticky__header");
-
-const closeHeader = document.querySelector(".sticky__header__close");
-
-hamburger.addEventListener("click", () => {
-  sticky_header.classList.toggle("active");
-});
-closeHeader.addEventListener("click", () => {
-  sticky_header.classList.toggle("active");
-});
-
-/**
- *
- * Swiper Initialization
- *
- */
-
-var swiper = new Swiper(".mySwiper", {
-  scrollbar: {
-    el: ".swiper-scrollbar",
-    hide: false,
-  },
-});
-
-// var swiper3 = new Swiper(".mySwiper3", {
-//   loop: true,
-//   spaceBetween: 10,
-//   slidesPerView: 4,
-//   freeMode: true,
-//   watchSlidesProgress: true,
-// });
-// var swiper2 = new Swiper(".mySwiper2", {
-//   loop: true,
-//   spaceBetween: 10,
-//   navigation: {
-//     nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev",
-//   },
-//   thumbs: {
-//     swiper: swiper3,
-//   },
-// });
-
 var swiper3 = new Swiper(".mySwiper3", {
   loop: true,
   spaceBetween: 10,
@@ -96,3 +52,13 @@ button2.addEventListener("click", () => {
 close__img2.addEventListener("click", () => {
   zapytaj__layout2.classList.toggle("zl__form__active");
 });
+
+// let car__boxes = document.querySelectorAll(".cars__box");
+
+// car__boxes.forEach((elem) =>
+//   elem.addEventListener("click", () => {
+//     console.log("sadas");
+
+//     window.location.assign("/pages/karta_auto/karta_auto.html");
+//   })
+// );

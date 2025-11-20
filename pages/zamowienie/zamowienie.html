@@ -14,6 +14,7 @@
   <!-- Link Swiper's CSS -->
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="/global/index.css">
   <link rel="stylesheet" href="./zamowienie.css">
 </head>
 
@@ -37,8 +38,12 @@
             </div>
             <div class="header__info__elem">
               <img src="/assets/icon/phone.png" alt="">
-              <p>+481111</p>
-              <h3>+48 510 272 737</h3>
+              <a href="tel:+481111">
+                <p>+481111</p>
+              </a>
+              <a href="tel:+48510272737">
+                <h3>+48 510 272 737</h3>
+              </a>
             </div>
           </div>
           <div class="header__btn">
@@ -89,11 +94,11 @@
         </div>
       </div>
       <div class="zapytaj__layout">
-        <div class="zl__form">
+        <form class="zl__form">
           <img src="/assets/icon/close_big.png" class="close__img" alt="">
           <h2 class="zl__title" class="input">Zapytaj</h2>
-          <input type="text" class="input" placeholder="Imię">
-          <input type="number" class="input" placeholder="+48">
+          <input type="text" class="input" placeholder="Imię" required>
+          <input type="number" class="input" placeholder="+48" required>
           <input type="email" class="input" placeholder="email">
           <textarea placeholder="Wpisz tekst"></textarea>
           <div class="zl__check">
@@ -108,7 +113,7 @@
             do Prezesa Urzędu Ochrony Danych Osobowych. Szczegółowe informacje o przetwarzaniu
             danych osobowych znajdują się w Polityce Prywatności.</p>
           <button>Zadać pytanie</button>
-        </div>
+        </form>
       </div>
       <div class="section__header desktop__padding">
         <h2>Auto na zamówienie:
@@ -498,6 +503,8 @@
                 <div class="swiper-slide"><img src="../../assets/car3.png" alt="Engine"></div>
                 <div class="swiper-slide"><img src="../../assets/car1.png" alt="BMW X5"></div>
               </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
               <div class="swiper-scrollbar"></div>
             </div>
 
@@ -532,6 +539,8 @@
                 <div class="swiper-slide"><img src="../../assets/car2.png" alt="Interior"></div>
                 <div class="swiper-slide"><img src="../../assets/car1.png" alt="BMW X5"></div>
               </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
               <div class="swiper-scrollbar"></div>
             </div>
 
@@ -566,6 +575,8 @@
                 <div class="swiper-slide"><img src="../../assets/car2.png" alt="Interior"></div>
                 <div class="swiper-slide"><img src="../../assets/car3.png" alt="Engine"></div>
               </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
               <div class="swiper-scrollbar"></div>
             </div>
 
@@ -599,6 +610,8 @@
                 <div class="swiper-slide"><img src="../../assets/car3.png" alt="Engine"></div>
                 <div class="swiper-slide"><img src="../../assets/car1.png" alt="BMW X5"></div>
               </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
               <div class="swiper-scrollbar"></div>
             </div>
 
@@ -633,6 +646,8 @@
                 <div class="swiper-slide"><img src="../../assets/car3.png" alt="Engine"></div>
                 <div class="swiper-slide"><img src="../../assets/car1.png" alt="BMW X5"></div>
               </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
               <div class="swiper-scrollbar"></div>
             </div>
 
@@ -667,6 +682,8 @@
                 <div class="swiper-slide"><img src="../../assets/car2.png" alt="Interior"></div>
                 <div class="swiper-slide"><img src="../../assets/car1.png" alt="BMW X5"></div>
               </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
               <div class="swiper-scrollbar"></div>
             </div>
 
@@ -701,6 +718,8 @@
                 <div class="swiper-slide"><img src="../../assets/car2.png" alt="Interior"></div>
                 <div class="swiper-slide"><img src="../../assets/car3.png" alt="Engine"></div>
               </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
               <div class="swiper-scrollbar"></div>
             </div>
 
@@ -734,6 +753,8 @@
                 <div class="swiper-slide"><img src="../../assets/car3.png" alt="Engine"></div>
                 <div class="swiper-slide"><img src="../../assets/car1.png" alt="BMW X5"></div>
               </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
               <div class="swiper-scrollbar"></div>
             </div>
 
@@ -768,6 +789,8 @@
                 <div class="swiper-slide"><img src="../../assets/car3.png" alt="Engine"></div>
                 <div class="swiper-slide"><img src="../../assets/car1.png" alt="BMW X5"></div>
               </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
               <div class="swiper-scrollbar"></div>
             </div>
 
@@ -802,6 +825,8 @@
                 <div class="swiper-slide"><img src="../../assets/car2.png" alt="Interior"></div>
                 <div class="swiper-slide"><img src="../../assets/car1.png" alt="BMW X5"></div>
               </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
               <div class="swiper-scrollbar"></div>
             </div>
 
@@ -836,6 +861,8 @@
                 <div class="swiper-slide"><img src="../../assets/car2.png" alt="Interior"></div>
                 <div class="swiper-slide"><img src="../../assets/car3.png" alt="Engine"></div>
               </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
               <div class="swiper-scrollbar"></div>
             </div>
 
@@ -870,6 +897,8 @@
                 <div class="swiper-slide"><img src="../../assets/car2.png" alt="Interior"></div>
                 <div class="swiper-slide"><img src="../../assets/car1.png" alt="BMW X5"></div>
               </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
               <div class="swiper-scrollbar"></div>
             </div>
 
@@ -1711,7 +1740,7 @@
     </section>
 
 
-    <div class="zapytaj">
+    <form class="zapytaj">
       <div class="zapytaj__form">
         <h2 class="zf__title">Zapytaj</h2>
         <div class="zf__form">
@@ -1741,14 +1770,16 @@
           <p class="wa__text">Lub napisz w <span>WhatsApp</span></p>
         </div>
       </div>
-    </div>
+    </form>
 
     <section class="footer desktop__padding">
       <div class="footer__head">
         <img src="../../assets/logo_navbat.png" class="fh__logo" alt="">
         <div class="fh__info">
           <img src="../../assets/icon/mail.png" alt="">
-          <p>autozusa@gmail.com</p>
+          <a href="mailto:autozusa@gmail.com">
+            <p>autozusa@gmail.com</p>
+          </a>
         </div>
         <div class="fh__info">
           <img src="../../assets/icon/clock.png" alt="">
@@ -1756,11 +1787,15 @@
         </div>
         <div class="fh__info">
           <img src="../../assets/icon/phone.png" alt="">
-          <p>+481111</p>
+          <a href="tel:+481111">
+            <p>+481111</p>
+          </a>
         </div>
         <div class="fh__info">
           <img src="../../assets/icon/location.png" alt="">
-          <p>02-220, Polska, Warszawa, ulica Łopuszańska 13</p>
+          <a href="https://share.google/nVs1ANtFUaUsKkRE3">
+            <p>02-220, Polska, Warszawa, ulica Łopuszańska 13</p>
+          </a>
         </div>
         <div class="fh__socials">
           <div class="fhs__container">
@@ -1782,11 +1817,11 @@
       </div>
       <div class="footer__links">
         <h3 class="fl__title">Głowna</h3>
-        <a href="#" class="fl__link">Auto na zamówienie</a>
-        <a href="#" class="fl__link">Kalkulator</a>
+        <a href="/pages/zamowienie/zamowienie.html" class="fl__link">Auto na zamówienie</a>
+        <a href="/pages/kalkulator/kalkulator.html" class="fl__link">Kalkulator</a>
         <a href="#" class="fl__link">Śledzenie pojazdu</a>
-        <a href="#" class="fl__link">Blog</a>
-        <a href="#" class="fl__link">Kontakt</a>
+        <a href="/pages/blog/blog.html" class="fl__link">Blog</a>
+        <a href="/pages/kontakt/kontakt.html" class="fl__link">Kontakt</a>
         <a href="#" class="fl__link">Samochody elektryczne</a>
         <a href="#" class="fl__link">Hybrydy</a>
         <a href="#" class="fl__link">Pickupy</a>
@@ -1821,6 +1856,8 @@
 
   <!-- Swiper JS -->
   <script src=" https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script src="/global/index.js"></script>
   <script src="./zamowienie.js"></script>
 </body>
 
