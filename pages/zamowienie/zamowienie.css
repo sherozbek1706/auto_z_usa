@@ -932,7 +932,6 @@ marks
   display: flex;
   white-space: nowrap;
   animation: marquee 20s linear infinite;
-  border-left: 0.2px solid #ffffff5e;
 }
 
 .marquee-container-first .marquee-text {

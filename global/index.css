@@ -7,9 +7,6 @@
   outline: none;
 }
 
-.container {
-}
-
 body {
   background: #1f1f1f;
 }
@@ -28,11 +25,11 @@ header {
   width: 100%;
   height: 120px;
   backdrop-filter: blur(35px);
-  background: linear-gradient(
+  /* background: linear-gradient(
     89.72deg,
     rgba(0, 0, 0, 0.2) 0%,
     rgba(0, 0, 0, 0.5) 100%
-  );
+  ); */
 
   display: flex;
   flex-direction: column;
@@ -54,16 +51,18 @@ header {
 }
 .header__nav img {
   padding-right: 50px;
+  z-index: 1000;
 }
 .header__nav a {
   color: #fff;
-  font-weight: 500;
-  opacity: 0.7;
+  font-weight: 400;
+  opacity: 1;
   font-size: 14px;
   transition: 0.2s ease-in-out;
 }
 .header__nav a:hover {
   color: #dae6ff;
+  cursor: pointer;
 }
 .header__info {
   display: flex;
@@ -77,6 +76,11 @@ header {
   justify-content: center;
   gap: 5px;
   color: #fff;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.header__info__elem:hover {
+  color: #edfaef;
 }
 
 .header__btn {
@@ -93,8 +97,8 @@ header {
   margin-right: 40px;
 }
 .header__socials .header__social {
-  width: 35px;
-  height: 35px;
+  width: 40px;
+  height: 40px;
   background: #ffffff1a;
   border-radius: 50%;
   display: flex;
@@ -104,6 +108,9 @@ header {
   cursor: pointer;
   transition: 0.3s ease-in-out;
   cursor: pointer;
+}
+.header__socials .header__social img {
+  height: 18px;
 }
 .header__socials .header__social:hover {
   background: #ffffff3b;
@@ -161,6 +168,11 @@ header {
 }
 .header__bottom a {
   color: #fff;
+  font-weight: 400;
+  transition: 0.3s ease-in-out;
+}
+.header__bottom a:hover {
+  color: #dae6ff;
 }
 
 .sticky__header {
@@ -183,6 +195,7 @@ header {
   align-items: center;
   height: 70px;
   padding: 0 40px;
+
   border-bottom: 1px solid #ffffff1a;
 }
 .sticky__header__nav img {
@@ -226,7 +239,7 @@ header {
 .header__info__elem p {
   color: #fff;
 }
-@media only screen and (max-width: 1500px) {
+@media (max-width: 1500px) {
   .header__nav {
     gap: 15px;
   }
@@ -251,7 +264,7 @@ header {
     height: 12px;
   }
 }
-@media only screen and (max-width: 1250px) {
+@media (max-width: 1250px) {
   .desktop__padding {
     padding: 0px 60px;
   }
@@ -259,7 +272,7 @@ header {
     display: none;
   }
 }
-@media only screen and (max-width: 1010px) {
+@media (max-width: 1010px) {
   .header__btn button {
     width: 90px;
     margin-left: 10px;
@@ -272,7 +285,7 @@ header {
   }
 }
 
-@media only screen and (max-width: 850px) {
+@media (max-width: 850px) {
   .header__info__elem:nth-child(1) {
     display: none;
   }
@@ -280,9 +293,12 @@ header {
     padding: 0px 20px;
   }
 }
-@media only screen and (max-width: 680px) {
+@media (max-width: 680px) {
   .header__bottom {
     display: none;
+  }
+  .header__top {
+    overflow: hidden;
   }
   .header__nav a:first-child {
     display: block;
@@ -293,6 +309,19 @@ header {
   }
   header {
     height: 70px;
+    background: linear-gradient(
+      89.72deg,
+      rgba(0, 0, 0, 0.425) 0%,
+      rgba(0, 0, 0, 0.767) 100%
+    );
+  }
+  header.blur-white {
+    height: 70px;
+    background: linear-gradient(
+      89.72deg,
+      rgba(143, 128, 128, 0.425) 0%,
+      rgba(0, 0, 0, 0.767) 100%
+    );
   }
   .hamburger {
     display: block;
@@ -309,7 +338,7 @@ header {
   }
 }
 
-@media only screen and (max-width: 480px) {
+@media (max-width: 480px) {
   .header__info__elem:nth-child(2) img {
     display: none;
   }
@@ -519,12 +548,27 @@ ZAPYTAJ**************************************
 */
 
 .zapytaj {
+  position: relative;
   width: 100%;
   min-height: 700px;
   display: flex;
   align-items: center;
   justify-content: center;
   background: #fff;
+}
+
+.zapytaj-scroll-btn {
+  position: absolute;
+  top: -70px;
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  border: none;
+  z-index: 99;
+  background: #1f1f1f;
+}
+.zapytaj-scroll-btn svg {
+  height: 40%;
 }
 
 .zapytaj__form {
@@ -686,17 +730,20 @@ ZAPYTAJ**************************************
 }
 
 .wa__text {
-  font-size: 1rem;
+  font-size: 16px;
+  font-weight: 500;
   color: #2c3e50;
 }
 
 .wa__text span {
   color: #25d366;
-  font-weight: 600;
+  font-family: "Ubuntu";
+  font-weight: 500;
 }
 
 .zffs__btn {
   transition: 0.3s ease-in-out !important;
+  cursor: pointer;
 }
 .zffs__btn:hover {
   background: #007edf !important;
@@ -714,6 +761,11 @@ ZAPYTAJ**************************************
   }
 }
 @media (max-width: 1200px) {
+  .zapytaj-scroll-btn {
+    top: -35px;
+    height: 70px;
+    width: 70px;
+  }
   .zapytaj__form {
     padding-left: 60px;
   }
@@ -775,6 +827,9 @@ ZAPYTAJ**************************************
 }
 
 @media (max-width: 740px) {
+  .zapytaj-scroll-btn {
+    display: none;
+  }
   .whatsapp__ads {
     left: 28%;
     gap: 10px;
@@ -862,6 +917,10 @@ FOOTER**************************************
   opacity: 0.7;
   font-weight: 400;
   font-size: 18px;
+  transition: 0.3s ease-in-out;
+}
+.fl__link:hover {
+  opacity: 1;
 }
 
 .footer__head {
@@ -939,6 +998,7 @@ FOOTER**************************************
   align-items: center;
   justify-content: center;
 }
+
 .zapytaj__layout {
   width: 100%;
   height: 100vh;
@@ -979,15 +1039,50 @@ FOOTER**************************************
 }
 .input {
   width: 100%;
-  margin-bottom: 10px;
   padding: 10px 15px;
   background: #f1f1f1;
   font-size: 16px;
   color: #000;
-  border: none;
   border-radius: 10px;
   height: 60px;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  border: 1px solid #f1f1f1;
 }
+.input:hover {
+  border: 1px solid #dae6ff;
+}
+
+/* Required yulduzcha uchun o'ram */
+.input-wrapper {
+  width: 100%;
+  /* border: 1px solid red; */
+  margin-bottom: 10px;
+}
+.input-wrapper-inside {
+  /* border: 1px solid red; */
+  position: relative;
+  width: 100%;
+  /* margin-bottom: 10px; */
+}
+.input-wrapper .star {
+  position: absolute;
+  right: 30px;
+  font-size: 22px;
+  color: #0090ff;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.input-wrapper h4 {
+  display: none;
+  text-align: right;
+  font-size: 14px;
+  color: #ff0004;
+  font-weight: 400;
+  padding-right: 30px;
+}
+/* Yana yaxshiroq variant — label bilan ishlatish (tavsiya etiladi) */
 .zl__form textarea {
   width: 100%;
   height: 100px;
@@ -1003,8 +1098,9 @@ FOOTER**************************************
   margin: 10px 0;
 }
 .zl__form .desc {
-  font-size: 12px;
-  margin: 10px 0;
+  font-size: 15px;
+  margin: 0 !important;
+  margin-bottom: 10px !important;
 }
 .zl__form button {
   width: 300px;
@@ -1018,9 +1114,11 @@ FOOTER**************************************
 
 .zl__form button {
   transition: 0.3s ease-in-out !important;
+  cursor: pointer;
 }
 .zl__form button:hover {
   background: #007edf !important;
+  cursor: pointer;
 }
 .zl__form button:active {
   background: #0172c8 !important;
@@ -1038,7 +1136,7 @@ FOOTER**************************************
     width: 100%;
   }
   .zl__form .desc {
-    font-size: 10px;
+    font-size: 13px;
   }
 }
 
@@ -1048,6 +1146,7 @@ FOOTER**************************************
 }
 .btntyp1blue:hover {
   background: #007edf !important;
+  cursor: pointer;
   color: #fff;
 }
 .btntyp1blue:active {
@@ -1127,5 +1226,63 @@ FOOTER**************************************
   }
   .breadcrumb a {
     font-size: 14px;
+  }
+}
+
+/* SCROLL TO TOP */
+
+.scroll-top-btn {
+  z-index: 800;
+  position: fixed;
+  right: 40px;
+  bottom: -300px;
+  width: 140px;
+  height: 140px;
+  background: #fff;
+  color: #fff;
+  border: 1px solid #1e1e1e;
+  border-radius: 50%;
+  cursor: pointer;
+  /* display: none; boshida ko‘rinmaydi */
+  font-size: 22px;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s ease-in-out;
+}
+/* .scroll-top-btn.scroll-top-btn-active{
+  bottom: 20px;
+} */
+
+.scroll-top-btn.show {
+  bottom: 20px;
+}
+.scroll-top-btn svg {
+  height: 40%;
+}
+.scroll-top-btn:hover {
+  background: #000;
+  border: 1px solid #0090ff;
+  background: #dae6ff;
+}
+
+@media (max-width: 1100px) {
+  .scroll-top-btn {
+    right: 30px;
+    height: 120px;
+    width: 120px;
+  }
+}
+@media (max-width: 900px) {
+  .scroll-top-btn {
+    right: 20px;
+    height: 90px;
+    width: 90px;
+  }
+}
+@media (max-width: 60px) {
+  .scroll-top-btn {
+    right: 10px;
+    height: 30px;
+    width: 30px;
   }
 }

@@ -19,3 +19,5 @@ close__img.addEventListener("click", () => {
 //     window.location.assign("/pages/karta_auto/karta_auto.html");
 //   })
 // );
+
+

@@ -7,6 +7,7 @@
   <title>Auto Z USA</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" href="/assets/icon/favicon.png">
   <link
     href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Unbounded:wght@200..900&display=swap"
     rel="stylesheet">
@@ -20,10 +21,17 @@
 <body>
 
   <div class="container">
+    <button id="scrollTopBtn" class="scroll-top-btn"><svg width="50" height="50" viewBox="0 0 50 50" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M38.5417 13.5417L25.0001 0L11.4584 13.5417L12.9313 15.0146L23.9584 3.9875L23.9584 50H26.0417L26.0417 3.9875L37.0688 15.0146L38.5417 13.5417Z"
+          fill="#0090FF" />
+      </svg>
+    </button>
     <main>
       <div class="main_bg"></div>
-      <header>
-        <div class="header__top desktop__padding">
+      <header class="blur-white">
+        <div class="header__top  desktop__padding">
           <div class="header__nav">
             <a href="/index.html"><img src="/assets/logo_navbat.png" alt="logo"></a>
             <a href="#">Śledzenie pojazdu</a>
@@ -95,12 +103,27 @@
         </div>
       </div>
       <div class="zapytaj__layout">
-        <form class="zl__form">
+        <form class="zl__form" novalidate>
           <img src="/assets/icon/close_big.png" class="close__img" alt="">
           <h2 class="zl__title" class="input">Zapytaj</h2>
-          <input type="text" class="input" placeholder="Imię" required>
-          <input type="number" class="input" placeholder="+48" required>
-          <input type="email" class="input" placeholder="email">
+          <div class="input-wrapper">
+            <div class="input-wrapper-inside">
+              <input type="text" class="input" placeholder="Imię" required>
+              <p class="star">*</p>
+            </div>
+            <h4>Koniecznie do wypełnienia</h4>
+          </div>
+
+          <div class="input-wrapper">
+            <div class="input-wrapper-inside">
+              <input type="number" class="input" placeholder="+48" required>
+              <p class="star">*</p>
+            </div>
+            <h4>Koniecznie do wypełnienia</h4>
+          </div>
+          <div class="input-wrapper">
+            <input type="email" class="input" placeholder="email">
+          </div>
           <textarea placeholder="Wpisz tekst"></textarea>
           <div class="zl__check">
             <input type="checkbox">
@@ -120,7 +143,6 @@
         <div class="main__left__line"></div>
         <div class="main__right__line"></div>
         <div class="main__bottom__line"></div>
-
         <h1>Auta z USA,<br> Europy i Kanady</h1>
         <div class="main__title__btns">
           <button class="btntyp1blue">Auta z USA do 50 tys</button>
@@ -139,10 +161,7 @@
           </div>
         </div>
       </div>
-
-
     </main>
-
     <section class="section__cars">
       <div class="section__header desktop__padding">
         <h2>Ostatnio odebrane klientami</h2>
@@ -1214,7 +1233,6 @@
 
       </div>
     </section>
-
     <section class="how__we__work">
       <div class="hww__text">
         <div class="hww__text__box">
@@ -1278,7 +1296,6 @@
         </div>
       </div>
     </section>
-
     <section class="worth__importing">
       <div class="section__header desktop__padding">
         <h2>Dlaczego warto <span>importować</span> samochody z USA?</h2>
@@ -1355,7 +1372,6 @@
       </div>
 
     </section>
-
     <section class="worth__importing">
       <div class="section__header desktop__padding">
         <h2>Jakie modele cieszą się największym <span>zainteresowaniem?</span></h2>
@@ -1602,13 +1618,33 @@
       </div>
     </div>
 
-    <form class="zapytaj">
+    <form class="zapytaj" novalidate>
+      <button class="zapytaj-scroll-btn" type="button"><svg width="50" height="50" viewBox="0 0 50 50" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M11.4585 36.4583L25.0002 50L38.5418 36.4583L37.0689 34.9854L26.0418 46.0125L26.0418 0H23.9585L23.9585 46.0125L12.9314 34.9854L11.4585 36.4583Z"
+            fill="white" />
+        </svg>
+      </button>
+
       <div class="zapytaj__form">
         <h2 class="zf__title">Zapytaj</h2>
         <div class="zf__form">
           <div class="zff__inputs">
-            <input type="text" placeholder="Imię" required>
-            <input type="number" placeholder="+48" required>
+            <div class="input-wrapper">
+              <div class="input-wrapper-inside">
+                <input type="text" placeholder="Imię" required>
+                <p class="star">*</p>
+              </div>
+              <h4>Koniecznie do wypełnienia</h4>
+            </div>
+            <div class="input-wrapper">
+              <div class="input-wrapper-inside">
+                <input type="number" placeholder="+48" required>
+                <p class="star">*</p>
+              </div>
+              <h4>Koniecznie do wypełnienia</h4>
+            </div>
             <input type="email" placeholder="Email" required>
           </div>
           <textarea name="description" class="zff__textarea" placeholder="Wpisz tekst"></textarea>

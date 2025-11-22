@@ -98,7 +98,8 @@ main {
 }
 .main__title__status p {
   color: #fff;
-  font-size: 14px;
+  font-size: 18px;
+  font-weight: 300;
   opacity: 0.7;
   line-height: 20px;
 }
@@ -108,20 +109,19 @@ main {
   top: 0;
   left: 10%;
   height: 100%;
-  border: 2px solid #ffffff4d;
+  border: 1px solid #ffffff4d;
 }
 .main__right__line {
   position: absolute;
   top: 0;
   right: 10%;
   height: 100%;
-  border: 2px solid #ffffff4d;
+  border: 1px solid #ffffff4d;
 }
 .main__bottom__line {
   position: absolute;
-  display: none;
   left: 0;
-  bottom: 20%;
+  bottom: 10%;
   width: 100%;
   border: 2px solid #ffffff4d;
 }
@@ -546,7 +546,6 @@ main {
   display: flex;
   white-space: nowrap;
   animation: marquee 20s linear infinite;
-  border-left: 0.2px solid #ffffff5e;
 }
 
 .marquee-container-first .marquee-text {
@@ -1122,7 +1121,7 @@ main {
   font-family: "Unbounded", sans-serif;
 }
 
-.desc {
+.card .desc {
   color: #6e6e6e;
   font-weight: 300;
   line-height: 18px;
@@ -1154,7 +1153,7 @@ main {
   .number {
     font-size: 18px;
   }
-  .desc {
+  .card .desc {
     font-size: 15px;
   }
 }
@@ -1176,7 +1175,7 @@ main {
   .number {
     font-size: 16px;
   }
-  .desc {
+  .card .desc {
     font-size: 13px;
   }
   .title {
@@ -1202,7 +1201,7 @@ main {
   .number {
     font-size: 19px;
   }
-  .desc {
+  .card .desc {
     font-size: 15px;
   }
   .icon-container {
@@ -1236,7 +1235,7 @@ main {
   .number {
     font-size: 16px;
   }
-  .desc {
+  .card .desc {
     font-size: 13px;
   }
 }
@@ -1255,7 +1254,7 @@ main {
   .number {
     font-size: 19px;
   }
-  .desc {
+  .card .desc {
     font-size: 16px;
   }
 }
@@ -1271,7 +1270,7 @@ main {
   .number {
     font-size: 16px;
   }
-  .desc {
+  .card .desc {
     font-size: 13px;
   }
   .icon-container {
@@ -1310,7 +1309,6 @@ main {
   display: flex;
   white-space: nowrap;
   animation: marquee 20s linear infinite;
-  border-left: 0.2px solid #ffffff5e;
 }
 
 .marquee-container-second .marquee-text {
